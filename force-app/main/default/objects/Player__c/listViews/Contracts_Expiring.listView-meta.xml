@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contracts_Expiring</fullName>
+    <columns>NAME</columns>
+    <columns>Position__c</columns>
+    <columns>ContractEndDate__c</columns>
+    <columns>ContractTrafficLight__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ContractStatus__c</field>
+        <operation>equals</operation>
+        <value>Red,Yellow</value>
+    </filters>
+    <label>Contracts Expiring</label>
+</ListView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JerseyNumber_Valid</fullName>
+    <active>true</active>
+    <description>Only values from 1 to 99</description>
+    <errorConditionFormula>OR(
+  JerseyNumber__c &lt; 1,
+  JerseyNumber__c &gt; 99
+)</errorConditionFormula>
+    <errorDisplayField>JerseyNumber__c</errorDisplayField>
+    <errorMessage>The jersey number must be between 1 and 99.</errorMessage>
+</ValidationRule>
